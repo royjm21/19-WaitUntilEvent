@@ -24,10 +24,8 @@ The WHILE TRUE pattern:
 Ultimately you should be comfortable with both approaches.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
-
-
+         their colleagues and Jeremy Roy.
+"""  # Done
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_sum_until_prime_input()
@@ -91,10 +89,15 @@ def sum_until_prime_input():
          The sum of the input integers is: 167
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # Done: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
-
+    total = 0
+    while True:
+        x = int(input('insert an integer bigger than 1'))
+        total = total + x
+        if is_prime(total):
+            break
 
 def run_test_next_prime():
     """ Tests the   next_prime    function. """
