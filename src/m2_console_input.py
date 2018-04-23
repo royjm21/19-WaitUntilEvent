@@ -4,7 +4,7 @@ This module demonstrates lets you practice INPUT from the CONSOLE.
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
          their colleagues and Jeremy Roy.
 """  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
-
+import math
 
 def main():
     """ TESTs the functions in this module (by calling them). """
@@ -130,10 +130,17 @@ def input_it_all():
          Peace & Love.
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # Done: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
+    x = float(input('insert decimal'))
+    y = int(input('insert number'))
+    z = str(input('insert phrase'))
 
+    for k in range(y):
+        print(math.sqrt(x))
+    for k in range(y):
+        print(z)
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
